@@ -1,0 +1,9 @@
+
+/* Class = "IBUINavigationItem"; title = "Hello"; ObjectID = "mM5-B1-JSq"; */
+"mM5-B1-JSq.title" = "Hello";
+
+/* Class = "IBUIBarButtonItem"; title = "Settings"; ObjectID = "nOQ-U8-viu"; */
+"nOQ-U8-viu.title" = "Settings";
+
+/* Class = "IBUILabel"; text = "This is a demo!"; ObjectID = "pzE-ei-NaK"; */
+"pzE-ei-NaK.text" = "This is a demo!";

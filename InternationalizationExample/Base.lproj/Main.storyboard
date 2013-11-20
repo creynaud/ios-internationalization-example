@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8Z9-gA-FIy">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Rfl-Me-rCb">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="8Z9-gA-FIy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="na7-6W-GaA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FAw-nr-ZnF" kind="relationship" relationship="rootViewController" id="SUn-Kw-Ofu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DKG-bx-UP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="78"/>
+        </scene>
+        <!--View Controller - Hello-->
+        <scene sceneID="gzn-2O-8z1">
+            <objects>
+                <viewController id="FAw-nr-ZnF" customClass="IEXViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hhj-7I-5C2"/>
+                        <viewControllerLayoutGuide type="bottom" id="CyD-A1-Y2u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xpA-NT-RuG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a demo!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzE-ei-NaK">
+                                <rect key="frame" x="20" y="83" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48e-nc-uXx">
+                                <rect key="frame" x="20" y="112" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="48e-nc-uXx" firstAttribute="leading" secondItem="pzE-ei-NaK" secondAttribute="leading" id="8hY-XT-8UP"/>
+                            <constraint firstItem="48e-nc-uXx" firstAttribute="top" secondItem="pzE-ei-NaK" secondAttribute="bottom" constant="8" symbolic="YES" id="LXF-jM-BC8"/>
+                            <constraint firstItem="pzE-ei-NaK" firstAttribute="top" secondItem="hhj-7I-5C2" secondAttribute="bottom" constant="19" id="Pcl-EO-t7A"/>
+                            <constraint firstAttribute="trailing" secondItem="pzE-ei-NaK" secondAttribute="trailing" constant="20" symbolic="YES" id="Qro-pr-tdQ"/>
+                            <constraint firstItem="48e-nc-uXx" firstAttribute="trailing" secondItem="pzE-ei-NaK" secondAttribute="trailing" id="ni0-U3-xm1"/>
+                            <constraint firstItem="pzE-ei-NaK" firstAttribute="leading" secondItem="xpA-NT-RuG" secondAttribute="leading" constant="20" symbolic="YES" id="yVs-lZ-rwr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hello" id="mM5-B1-JSq">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="nOQ-U8-viu"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dayOfTheWeek" destination="48e-nc-uXx" id="UdR-ju-ShB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7i9-QO-cAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629" y="78"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
